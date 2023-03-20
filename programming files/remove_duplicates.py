@@ -1,3 +1,4 @@
+# broken by: Ethan Perry
 def remove_duplicates(arr):
     # sort the array
     arr.sort()
@@ -5,7 +6,7 @@ def remove_duplicates(arr):
     removed_elements = []
     for i in range(len(arr)):
         # if an element is has not yet been seen, add it to unique_arr
-        if i == 0 or arr[i] != arr[i-1]:
+        if i == 0 or arr[i] != arr[i+1]:
             unique_arr.append(arr[i])
         else:
             removed_elements.append(arr[i])
